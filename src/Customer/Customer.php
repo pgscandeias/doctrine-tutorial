@@ -8,6 +8,11 @@ use Hellofresh\DoctrineTutorial\Common\CollectionInterface;
 class Customer
 {
     /**
+     * @var int
+     */
+    protected $id;
+
+    /**
      * @var string
      */
     protected $name;
@@ -25,6 +30,17 @@ class Customer
     public function __construct()
     {
         $this->subscribedProducts = new Collection;
+    }
+
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    public function setId($id)
+    {
+        $this->id = $id;
+        return $this;
     }
 
     public function getName()

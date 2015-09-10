@@ -9,6 +9,11 @@ use Hellofresh\DoctrineTutorial\Product\Product;
 class Menu
 {
     /**
+     * @var int
+     */
+    protected $id;
+
+    /**
      * @var string
      */
     protected $week;
@@ -26,6 +31,17 @@ class Menu
     public function __construct()
     {
         $this->recipes = new Collection;
+    }
+
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    public function setId($id)
+    {
+        $this->id = $id;
+        return $this;
     }
 
     public function getWeek()

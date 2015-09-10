@@ -5,7 +5,7 @@ namespace Hellofresh\DoctrineTutorial\Product;
 class Product
 {
     /**
-     * @var id
+     * @var int
      */
     protected $id;
 
