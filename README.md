@@ -10,8 +10,10 @@ We'll learn the basics of [Doctrine](http://www.doctrine-project.org/) along the
 
 It's a good idea to refer to the official documentation from time to time:
 
-http://doctrine-mongodb-odm.readthedocs.org/en/latest/tutorials/getting-started.html
+Doctrine ORM (Relational databases):  
+http://doctrine-orm.readthedocs.org/en/latest/tutorials/getting-started.html
 
+Doctrine ODM (MongoDb):  
 http://doctrine-mongodb-odm.readthedocs.org/en/latest/tutorials/getting-started.html
 
 
