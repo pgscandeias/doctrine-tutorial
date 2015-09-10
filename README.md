@@ -387,6 +387,24 @@ Two big advantages:
 - You're now free to inject any dependencies the repository needs.
 
 
+##### Don't use the Object Manager as repository factory
+
+It's very easy to declare the repository class in entity metadata an then have the Object Manager instantiate it:
+
+```yaml
+Hellofresh\DoctrineTutorial\Customer\Customer:
+    repositoryClass: Repository\CustomerRepository
+```
+
+```php
+$repository = $entityManager->getRepository('Hellofresh\DoctrineTutorial\Customer\Customer');
+```
+
+The problem with this is that now you're stuck with the Object Manager's factory. If you need to inject dependencies into the repository, **and you will**, you're out of luck.
+
+So don't do it. Use a dependency injection container, declare your repositories as services and always use that to instantiate them.
+
+
 ##### Let's TDD this thing
 
 Because it's 2015 and we all love [Uncle Bob](https://twitter.com/unclebobmartin), we're going to TDD these bad boys. It's not that difficult, but it requires a bit more setup up front. The payoff is, of course, a nice safety net.
