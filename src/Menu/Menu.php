@@ -14,6 +14,11 @@ class Menu
     protected $id;
 
     /**
+     * @var DateTime
+     */
+    protected $createdAt;
+
+    /**
      * @var string
      */
     protected $week;
@@ -41,6 +46,17 @@ class Menu
     public function setId($id)
     {
         $this->id = $id;
+        return $this;
+    }
+
+    public function getCreatedAt()
+    {
+        return $this->createdAt();
+    }
+
+    public function setCreatedAt(\DateTime $createdAt)
+    {
+        $this->createdAt = $createdAt;
         return $this;
     }
 
