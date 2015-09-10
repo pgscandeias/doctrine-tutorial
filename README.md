@@ -422,7 +422,7 @@ Nelmio\Entity\User:
         favoriteNumber: 50%? <numberBetween(1, 200)>
 ```
 
-We'll put ours in [`tests/support/fixtures`](./tests/support/fixtures) and load them when needed like so:
+We'll put ours in [`tests/fixtures`](./tests/fixtures) and load them when needed like so:
 
 ```
 $this->loadFixtures('customers');
