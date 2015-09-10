@@ -8,6 +8,12 @@ As we write this application, we'll see how the Data Mapper and Repository patte
 
 We'll learn the basics of [Doctrine](http://www.doctrine-project.org/) along the way.
 
+It's a good idea to refer to the official documentation from time to time:
+
+http://doctrine-mongodb-odm.readthedocs.org/en/latest/tutorials/getting-started.html
+
+http://doctrine-mongodb-odm.readthedocs.org/en/latest/tutorials/getting-started.html
+
 
 ## Requirements
 
