@@ -1,0 +1,20 @@
+Hellofresh\DoctrineTutorial\Product\Product:
+    type: entity
+    table: products
+    indexes:
+        index_id:
+            columns: [ id ]
+        index_handle:
+            columns: [ handle ]
+
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: AUTO
+
+    fields:
+        handle:
+            type: string
+        name:
+            type: string

@@ -1,0 +1,30 @@
+Hellofresh\DoctrineTutorial\Customer\Customer:
+    type: entity
+    table: customers
+    indexes:
+        index_id:
+            columns: [ id ]
+
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: AUTO
+
+    fields:
+        name:
+            type: string
+        email:
+            type: string
+
+    manyToMany:
+        subscribedProducts:
+            targetEntity: Hellofresh\DoctrineTutorial\Product\Product
+            joinTable:
+                name: customers_products
+                joinColumns:
+                    customer_id:
+                        referencedColumnName: id
+                inverseJoinColumns:
+                    product_id:
+                        referencedColumnName: id

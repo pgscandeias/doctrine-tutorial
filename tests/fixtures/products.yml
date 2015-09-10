@@ -1,0 +1,4 @@
+Hellofresh\DoctrineTutorial\Product\Product:
+    p1:
+        handle: classic-box
+        name: Classic Box

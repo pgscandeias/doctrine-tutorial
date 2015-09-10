@@ -1,0 +1,6 @@
+Hellofresh\DoctrineTutorial\Menu\Recipe:
+    type: embeddedDocument
+
+    fields:
+        instructions:
+            type: string

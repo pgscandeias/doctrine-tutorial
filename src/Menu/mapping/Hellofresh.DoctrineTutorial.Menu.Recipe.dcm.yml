@@ -1,0 +1,17 @@
+Hellofresh\DoctrineTutorial\Menu\Recipe:
+    type: document
+    collection: recipes
+
+    fields:
+        id:
+            id: true
+        name:
+            type: string
+
+    manyToOne:
+        product:
+            targetEntity: Hellofresh\DoctrineTutorial\Product\Product
+
+    embedMany:
+        steps:
+            targetEntity: Hellofresh\DoctrineTutorial\Menu\Step

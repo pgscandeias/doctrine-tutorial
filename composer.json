@@ -1,0 +1,27 @@
+{
+    "name": "hellofresh/doctrine-tutorial",
+    "description": "Doctrine tutorial",
+    "authors": [
+        {
+            "name": "Pedro C.",
+            "email": "pc@hellofresh.com"
+        }
+    ],
+    "require": {
+        "doctrine/mongodb-odm": "1.0.0-BETA13",
+        "doctrine/orm": "~2.4"
+    },
+    "require-dev": {
+        "nelmio/alice": "1.7.*",
+        "phpunit/phpunit": "~4.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hellofresh\\DoctrineTutorial\\": "src/",
+            "Tests\\Hellofresh\\DoctrineTutorial\\": "tests/"
+        }
+    },
+    "config": {
+        "bin-dir": "bin"
+    }
+}

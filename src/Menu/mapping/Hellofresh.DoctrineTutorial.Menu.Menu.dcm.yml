@@ -1,0 +1,32 @@
+Hellofresh\DoctrineTutorial\Menu\Menu:
+    type: entity
+    table: menus
+    indexes:
+        index_id:
+            columns: [ id ]
+
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: AUTO
+
+    fields:
+        week:
+            type: string
+
+    manyToOne:
+        product:
+            targetEntity: Hellofresh\DoctrineTutorial\Product\Product
+
+    manyToMany:
+        recipes:
+            targetEntity: Hellofresh\DoctrineTutorial\Menu\Recipe
+            joinTable:
+                name: menus_recipes
+                joinColumns:
+                    menu_id:
+                        referencedColumnName: id
+                inverseJoinColumns:
+                    recipe_id:
+                        referencedColumnName: id

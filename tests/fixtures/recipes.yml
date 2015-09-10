@@ -1,0 +1,5 @@
+Hellofresh\DoctrineTutorial\Menu\Recipe:
+    r1:
+        id: 55f13bd332668a28390041a7
+        name: Spaghetti with meatballs
+        product: classic-box
