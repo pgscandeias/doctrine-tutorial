@@ -150,7 +150,7 @@ http://culttt.com/2014/06/18/whats-difference-active-record-data-mapper/
 
 So far we talked a lot and coded nothing. Let's change that. Here's what we need to do:
 
-- Create a database
+- Create databases
 - Initialize a project
 - Write the domain entities
 - Write the entity mapping files
@@ -159,9 +159,9 @@ So far we talked a lot and coded nothing. Let's change that. Here's what we need
 Let's get cracking!
 
 
-### Create a database
+### Create databases
 
-Not going to teach you how to do this. I'll just assume the following:
+We need a MySQL and a MongoDb database running. Not going to teach you how to do this. I'll just assume a mongo instance is running and the following details for MySQL:
 
 ```
 host: localhost
