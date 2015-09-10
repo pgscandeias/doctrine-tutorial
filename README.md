@@ -253,6 +253,13 @@ Hellofresh\DoctrineTutorial\Menu\Menu:
     # All the fields go here.
     # There are many options for their primitive types, lengths, etc.
     fields:
+        # This field is camelCase in the entity and snake_case in the database!
+        createdAt:
+            # We use the "name" mapping to handle that
+            name: created_at # this is what the column is called
+            type: datetime
+        # For this field, the entity property is exactly the same as the
+        # database column, so we just map the type and we're done
         week:
             type: string
 
